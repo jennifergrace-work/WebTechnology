@@ -1,0 +1,46 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, Roboto, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+}
+
+button,
+input {
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+a {
+  color: inherit;
+}
+
+
+statCard.jsx
+function StatCard({ title, value, icon, color }) {
+  return (
+    <div className="card">
+      <div
+        className="card-icon"
+        style={{ background: `${color}22`, color: color }}
+      >
+        {icon}
+      </div>
+      <div className="card-info">
+        <h3>{title}</h3>
+        <p>{value}</p>
+      </div>
+    </div>
+  );
+}
+
+export default StatCard;
